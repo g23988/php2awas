@@ -1,0 +1,31 @@
+# 舊系統一鍵啟動：
+#   cd runtime && docker compose up -d --build
+#   網站：http://localhost:8080/index.php/admin/login
+#   API ：http://localhost:8080/index.php/api/...
+name: legacy-shop
+
+services:
+  web:
+    build: ./php
+    ports:
+      - "8080:80"
+    volumes:
+      - ../legacy_demo:/var/www/html
+      - ./mail-out:/var/mail-out
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:10.6   # MySQL 相容；Apple Silicon 沒有 MySQL 5.x 的 arm64 image
+    environment:
+      MARIADB_ROOT_PASSWORD: "shop@1234"   # 必須和 legacy_demo 裡寫死的密碼一致
+      MARIADB_DATABASE: shopdb
+    volumes:
+      - ./mysql/my.cnf:/etc/mysql/conf.d/legacy.cnf:ro
+      - ../legacy_demo/sql:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "3307:3306"
+    networks:
+      default:
+        aliases:
+          - db01.shop.local   # 舊程式寫死的資料庫主機名稱

@@ -1,0 +1,11 @@
+{
+  "name": "legacy-shop-screenshots",
+  "private": true,
+  "description": "舊系統畫面截圖（使用本機 Google Chrome）",
+  "scripts": {
+    "shoot": "node shoot.js ../../docs/screenshots"
+  },
+  "dependencies": {
+    "puppeteer-core": "^23.0.0"
+  }
+}

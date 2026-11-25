@@ -1,0 +1,49 @@
+/* 鮮農直送網 管理後台  2009/10 */
+body { margin: 0px; background: #ffffff; color: #000000; }
+body, td, th, input, select, textarea { font-family: Verdana, Arial, "新細明體", sans-serif; font-size: 11px; }
+a { color: #000000; text-decoration: none; }
+a:hover { color: #aabbdd; text-decoration: underline; }
+form { margin: 0px; }
+
+.headerBar { background: #000000; }
+.headerBarContent { color: #ffffff; font-weight: bold; padding: 2px 6px; }
+a.headerLink { color: #ffffff; }
+a.headerLink:hover { color: #ffff99; }
+.headerLogo { background: #336633; color: #ffffff; font-family: "Arial Black", Verdana; font-size: 20px; padding: 6px 10px; }
+.headerLogo small { font-family: Verdana; font-size: 11px; font-weight: normal; color: #ccff99; }
+
+.columnLeft { background: #ffffff; border-right: 1px solid #b6b7cb; }
+.menuBoxHeading { white-space: nowrap; background: #7187bb; color: #ffffff; font-weight: bold; padding: 3px 5px; }
+.menuBoxContent { white-space: nowrap; background: #f0f1f1; padding: 4px 8px; line-height: 1.8em; }
+a.menuBoxContentLink { color: #616060; }
+.menuBoxContent b { color: #cc0000; }
+
+.pageHeading { font-family: Verdana, Arial; font-size: 18px; color: #727272; font-weight: bold; }
+.smallText { font-size: 10px; }
+.main { font-size: 12px; }
+.messageStackSuccess { background: #99ff00; padding: 4px; font-size: 12px; }
+.messageStackError { background: #ffb3b5; padding: 4px; font-size: 12px; }
+
+.dataTableHeadingRow { background: #c9c9c9; }
+.dataTableHeadingContent { white-space: nowrap; color: #ffffff; font-weight: bold; padding: 2px 4px; }
+.dataTableRow { background: #f0f1f1; }
+.dataTableRowOver { background: #ffffff; cursor: pointer; }
+.dataTableRowSelected { background: #dee4e8; }
+.dataTableContent { white-space: nowrap; color: #000000; padding: 2px 4px; }
+
+.infoBoxHeading { background: #b3bac5; color: #ffffff; font-weight: bold; padding: 3px 5px; }
+.infoBoxContent { background: #dee4e8; padding: 4px 6px; }
+
+.btn { background: #ece9d8; border: 1px outset #cccccc; padding: 1px 6px; font-size: 11px; cursor: pointer; }
+a.btnLink { display: inline-block; background: #ece9d8; border: 2px outset #ffffff; padding: 1px 6px; margin: 2px 1px; color: #000000; }
+a.btnLink:hover { text-decoration: none; background: #f8f6ee; }
+
+.fieldKey { font-weight: bold; background: #f0f1f1; padding: 3px 6px; white-space: nowrap; }
+.fieldValue { padding: 3px 6px; }
+.footer { color: #999999; font-size: 10px; padding: 12px; border-top: 1px solid #cccccc; }
+
+/* 舊頁面沿用 (2009 版) */
+table.list { border-collapse: collapse; background: #ffffff; }
+table.list th { background: #c9c9c9; color: #ffffff; padding: 3px 6px; }
+table.list td { border: 1px solid #dddddd; padding: 3px 6px; }
+.msg { color: #cc0000; font-weight: bold; }

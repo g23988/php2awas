@@ -1,0 +1,5 @@
+runtime/mail-out/mail.log
+legacy_demo/system/logs/log-*.php
+__pycache__/
+.pytest_cache/
+node_modules/

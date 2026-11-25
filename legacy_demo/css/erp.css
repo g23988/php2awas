@@ -1,0 +1,51 @@
+/* 電話訂購 - 仿 ERP 畫面  2010/11 */
+body { margin: 0px; background: #dfe6ef; }
+body, td, th, input, select, button { font-family: Tahoma, Verdana, "新細明體", sans-serif; font-size: 12px; }
+form { margin: 0px; }
+
+.sapWindow { background: #dfe6ef; border: 2px solid #b33a2a; }
+.menuBar { background: #f0f0f0; border-bottom: 1px solid #c0c0c0; padding: 3px 8px; color: #1c3f73; }
+.menuBar span { margin-right: 14px; cursor: default; }
+.sysToolbar { background: #e8edf3; border-bottom: 1px solid #b8c4d4; padding: 3px 6px; }
+.appToolbar { background: #c9d5e5; border-bottom: 1px solid #a8b8cc; padding: 3px 6px; }
+.titleBar { background: #ffffff; color: #1c3f73; font-size: 20px; font-weight: bold; padding: 6px 10px; border-bottom: 1px solid #b8c4d4; }
+
+.tb { background: #f4f6f9; border: 1px solid #9aaabf; padding: 1px 6px; margin: 0px 1px; color: #1c3f73; cursor: pointer; font-size: 11px; height: 21px; }
+.tbOk { color: #2f8f2f; font-weight: bold; }
+.tbCancel { color: #c62a1f; }
+.sep { display: inline-block; width: 1px; height: 18px; background: #9aaabf; margin: 0px 6px; vertical-align: middle; }
+.cmdField { border: 1px solid #7f9db9; height: 15px; margin-right: 2px; }
+
+.sapBody { padding: 8px 10px; }
+.hdr td { padding: 2px 4px; }
+.lbl { color: #000000; white-space: nowrap; padding-right: 10px; }
+.lbl u { text-decoration: underline; }
+.fld { border: 1px solid #7f9db9; background: #ffffff; height: 16px; padding: 0px 3px; font-family: "Courier New", monospace; font-size: 12px; }
+select.fld { height: 19px; font-family: Tahoma, "新細明體"; }
+.fldRO { background: #e8ecf1; border: 1px solid #b5c2d3; color: #333333; }
+.fldReq { background: #ffffe0; }
+.num { text-align: right; }
+.lnk { color: #1c3f73; text-decoration: underline; }
+.hint { color: #6a7a90; font-size: 11px; }
+.f4 { color: #1c3f73; font-size: 13px; }
+
+.tabs { margin-top: 12px; }
+.tabs td { white-space: nowrap; padding: 4px 14px; border: 1px solid #9aaabf; border-bottom: none; cursor: pointer; }
+.tabOn { background: #4a6a9a; color: #ffffff; font-weight: bold; }
+.tabOff { background: #eef2f7; color: #1c3f73; }
+.tabDis { background: #eef2f7; color: #9aaabf; cursor: default; }
+.tabs td.tabFill { border: none; border-bottom: 1px solid #9aaabf; background: transparent; width: 100%; cursor: default; }
+.tabPanel { background: #d5dfeb; border: 1px solid #9aaabf; border-top: none; padding: 10px; min-height: 110px; height: 110px; }
+
+.gridTitle { margin-top: 12px; background: #c9d5e5; border: 1px solid #9aaabf; border-bottom: none; padding: 3px 6px; font-weight: bold; color: #1c3f73; width: 680px; }
+.grid { background: #9aaabf; width: 694px; }
+.grid th { background: #e8edf3; color: #1c3f73; font-weight: normal; text-align: left; padding: 2px 4px; }
+.grid td { background: #ffffff; padding: 0px 2px; height: 20px; }
+.grid td.ro { background: #f4f6f9; }
+.grid td.sel { background: #e8edf3; }
+.cell { border: none; width: 96%; height: 17px; font-family: "Courier New", monospace; font-size: 12px; }
+
+.statusBar { background: #e8edf3; border-top: 1px solid #9aaabf; padding: 4px 8px; height: 16px; }
+.statusInfo { background: #e8edf3; border-top: 1px solid #9aaabf; border-left: 1px solid #9aaabf; padding: 4px 8px; color: #666666; font-size: 11px; text-align: right; }
+.iconErr { color: #ffffff; background: #d22; padding: 0px 3px; font-weight: bold; }
+.iconOk { color: #ffffff; background: #2a2; padding: 0px 3px; font-weight: bold; }
